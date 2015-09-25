@@ -1,4 +1,78 @@
+@keyframes aparecerOpacidad{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes aparecerOpacidad{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes moverSombras{
+	0% {text-shadow: 0px 0px 5px black, 14px 14px 2px red, -15px -3px 2px white, 8px -12px 2px green;}
+	25% {text-shadow: 0px 0px 3px black, -14px 2px 2px green, 15px -3px 2px red, -2px 12px 2px white;}
+	50% {text-shadow: 0px 0px 5px black, 6px -10px 2px white, 0px 9px 2px green,-16px 0px 2px red;}
+	75% {text-shadow: 0px 0px 3px black, -14px 14px 2px red, 10px -5px 2px white, 6px 10px 2px green;}
+	100% {text-shadow: 0px 0px 3px black, -14px 2px 2px green, 15px -3px 2px red, -2px 12px 2px white;}
+}
+
+@-webkit-keyframes moverSombras{
+    0% {text-shadow: 0px 0px 5px black, 14px 14px 2px red, -15px -3px 2px white, 8px -12px 2px green;}
+	25% {text-shadow: 0px 0px 3px black, -14px 2px 2px green, 15px -3px 2px red, -2px 12px 2px white;}
+	50% {text-shadow: 0px 0px 5px black, 6px -10px 2px white, 0px 9px 2px green,-16px 0px 2px red;}
+	75% {text-shadow: 0px 0px 3px black, -14px 14px 2px red, 10px -5px 2px white, 6px 10px 2px green;}
+	100% {text-shadow: 0px 0px 3px black, -14px 2px 2px green, 15px -3px 2px red, -2px 12px 2px white;}
+}
+
+@font-face{
+	font-family: 'happy';
+	src: url(font/KGHAPPY.ttf);
+}
+
+@font-face{
+	font-family: 'aqua';
+	src: url(font/aqua.ttf);
+}
+
 #mapspace{
 	width: 800px;
 	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#txtHeader {
+	text-align: center;
+	color: white;
+	text-shadow: 1px 2px 4px black;
+	-webkit-animation: aparecerOpacidad 5s;/* Chrome, Safari, Opera */
+    animation: aparecerOpacidad 5s;
+	-webkit-text-stroke: 2px black;
+
+}
+
+#txtHeader h1 {
+	font-size: 350%;
+	-webkit-animation: moverSombras 3s infinite; /* Chrome, Safari, Opera */
+    animation: moverSombras 3s infinite;
+	-webkit-text-stroke: 2px black;
+
+}
+
+#txtHeader a{
+	color:white;
+	font-family: 'happy';
+}
+
+.font-aqua{
+ 	font-family: 'aqua';
+}
+
+.font-happy{
+ 	font-family: 'happy';
+}
+
+footer.page-footer{
+	margin-top: 0;
 }
